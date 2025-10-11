@@ -1,7 +1,14 @@
 import React from 'react';
-const Summary = () => {
+import ScoreGauge from "../components/ScoreGauge";
+const Summary = ({feedback}:{feedback:Feedback} ) => {
     return(
-        <div className="bg-white rounded-">Summary</div>
+        <div className="bg-white rounded-">
+            <div className="flex flex-row items-center p-4 gap-8">
+                <ScoreGauge  score={feedback.overallScore}/>
+
+
+            </div>
+        </div>
     )
 }
 export default Summary;
