@@ -225,11 +225,7 @@ export const AIResponseFormat = `
       };
     }`;
 
-export const prepareInstructions = ({
-                                        jobTitle,
-                                        jobDescription,
-                                        AIResponseFormat,
-                                    }: {
+export const prepareInstructions = ({jobTitle, jobDescription,}: {
     jobTitle: string;
     jobDescription: string;
 }) =>
